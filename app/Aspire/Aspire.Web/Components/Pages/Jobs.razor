@@ -1,0 +1,48 @@
+﻿@page "/jobs"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject BatchJobClient JobApi
+
+<PageTitle>Batch Jobs</PageTitle>
+
+<h1>OpenAI Batch Jobs</h1>
+
+<p>This component demonstrates showing data loaded from a backend API service.</p>
+
+@if (jobs == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Job Name</th>
+                <th>Job Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in jobs)
+            {
+                <tr>
+                    <td>@job.Id</td>
+                    <td>@job.Name</td>
+                    <td>@job.Status</td>
+                </tr>
+            }
+        </tbody>
+        
+    </table>
+}
+
+@code {
+    private BatchJob[]? jobs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        jobs = await JobApi.GetBatchJobsAsync();
+    }
+}
