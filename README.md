@@ -5,6 +5,7 @@ Use Batch Buddy to:
 - Monitor status of jobs
 - Send responses to blob storage upon completion
 
+![App UI - Mockup](./docs/app-ui.png)
 
 ## Contributing
 
