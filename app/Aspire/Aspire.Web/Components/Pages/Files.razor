@@ -1,0 +1,47 @@
+﻿@page "/files"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@inject ApiClient Api
+
+<PageTitle>Batch Files</PageTitle>
+
+<h1>OpenAI Batch Files</h1>
+
+
+@if (files == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>File Name</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in files)
+            {
+                <tr>
+                    <td>@file.Id</td>
+                    <td>@file.Filename</td>
+                    <td>@file.CreatedAt</td>
+                </tr>
+            }
+        </tbody>
+        
+    </table>
+}
+
+@code {
+    private OpenAIFileInfo[]? files;
+
+    protected override async Task OnInitializedAsync()
+    {
+        files = await Api.GetFilesAsync();
+    }
+}

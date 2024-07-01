@@ -1,0 +1,74 @@
+<mxfile host="Electron" modified="2024-07-01T14:14:58.356Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="uKO0vEg3nj8UPxXsEvr5" version="24.6.4" type="device" pages="2">
+  <diagram name="Page-1" id="gZlUtXruDb-HUIPytSuz">
+    <mxGraphModel dx="1572" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rEJftGGTSVFm3TWWUIGP-1" target="rEJftGGTSVFm3TWWUIGP-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-1" value="Web UI/Dashboard" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.azure_website;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="170" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.23;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="rEJftGGTSVFm3TWWUIGP-2" target="rEJftGGTSVFm3TWWUIGP-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-2" value="Job Cache" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" vertex="1" parent="1">
+          <mxGeometry x="133" y="320" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-4" value="Azure OpenAI Batches" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/Cognitive_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="650" y="198" width="68" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rEJftGGTSVFm3TWWUIGP-8" target="rEJftGGTSVFm3TWWUIGP-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rEJftGGTSVFm3TWWUIGP-8" target="rEJftGGTSVFm3TWWUIGP-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-8" value="Status Update" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=none;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.gauge;" vertex="1" parent="1">
+          <mxGeometry x="653.14" y="318" width="61.71" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-7" value="Results Storage" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Blob_Block.svg;" vertex="1" parent="1">
+          <mxGeometry x="652.14" y="468" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-9" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="649.64" y="326" width="68.70999999999998" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-5" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="rEJftGGTSVFm3TWWUIGP-9">
+          <mxGeometry width="28" height="24.71" as="geometry" />
+        </mxCell>
+        <mxCell id="rEJftGGTSVFm3TWWUIGP-13" value="Message Queues" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Storage_Queue.svg;" vertex="1" parent="1">
+          <mxGeometry x="510" y="468" width="64" height="52" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d6OoRYj6ryleezYHHOLS" name="Page-2">
+    <mxGraphModel dx="1570" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SvvT7uCOzWCP-esKtQNJ-1" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="20" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="SvvT7uCOzWCP-esKtQNJ-2" value="Chat WebApp" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="140" y="20" width="100" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="SvvT7uCOzWCP-esKtQNJ-3" value="Azure OpenAI" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="100" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="SvvT7uCOzWCP-esKtQNJ-4" value="DataApi" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="530" y="20" width="100" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="SvvT7uCOzWCP-esKtQNJ-5" value="Request" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1" target="SvvT7uCOzWCP-esKtQNJ-2">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="40" y="110" as="sourcePoint" />
+            <mxPoint x="100" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

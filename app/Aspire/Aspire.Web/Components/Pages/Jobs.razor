@@ -2,7 +2,7 @@
 @attribute [StreamRendering(true)]
 @attribute [OutputCache(Duration = 5)]
 
-@inject BatchJobClient JobApi
+@inject ApiClient JobApi
 
 <PageTitle>Batch Jobs</PageTitle>
 
@@ -20,8 +20,8 @@ else
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Job Name</th>
-                <th>Job Status</th>
+                <th>Endpoint</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
@@ -29,7 +29,7 @@ else
             {
                 <tr>
                     <td>@job.Id</td>
-                    <td>@job.Name</td>
+                    <td>@job.Endpoint</td>
                     <td>@job.Status</td>
                 </tr>
             }
@@ -39,7 +39,7 @@ else
 }
 
 @code {
-    private BatchJob[]? jobs;
+    private OpenAIBatchInfo[]? jobs;
 
     protected override async Task OnInitializedAsync()
     {

@@ -1,0 +1,10 @@
+
+GET https://openai-wus3.openai.azure.com/openai/deployments/gpt-4o-batch/batches?api-version=2024-04-15-preview
+content-type: application/json
+api-key: apikey
+
+###
+
+GET https://openai-wus3.openai.azure.com/openai/files?api-version=2024-04-15-preview
+content-type: application/json
+api-key: apikey
