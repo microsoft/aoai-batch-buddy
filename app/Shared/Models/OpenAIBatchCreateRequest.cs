@@ -2,7 +2,7 @@
 
 namespace Shared.Models;
 
-public class BatchCreateRequest
+public class OpenAIBatchCreateRequest
 {
     [JsonPropertyName("input_file_id")]
     public string InputFileId { get; set; } = string.Empty;

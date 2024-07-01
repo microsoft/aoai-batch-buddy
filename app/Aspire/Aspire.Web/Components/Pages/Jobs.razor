@@ -2,7 +2,7 @@
 @attribute [StreamRendering(true)]
 @attribute [OutputCache(Duration = 5)]
 
-@inject BatchJobClient JobApi
+@inject ApiClient JobApi
 
 <PageTitle>Batch Jobs</PageTitle>
 
@@ -39,7 +39,7 @@ else
 }
 
 @code {
-    private BatchJob[]? jobs;
+    private OpenAIBatchInfo[]? jobs;
 
     protected override async Task OnInitializedAsync()
     {

@@ -1,0 +1,26 @@
+<policies>
+    <inbound>
+        <base />
+        <set-backend-service backend-id="Primary" />
+        <set-header name="api-key" exists-action="override">
+            <value>{{openai-api-key}}</value>
+        </set-header>
+    </inbound>
+    <backend>
+        <retry condition="@(context.Response.StatusCode == 429 || context.Response.StatusCode >= 500)" count="5" interval="1" delta="1" max-interval="8" first-fast-retry="false">
+            <!-- Failover logic below - uncomment to retry on secondary backend -->
+            <!-- <choose>
+                <when condition="@(context.Response.StatusCode == 429 || context.Response.StatusCode >= 500)">
+                    <set-backend-service backend-id="secondary" />
+                </when>
+            </choose> -->
+            <forward-request buffer-request-body="true" />
+        </retry>
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>

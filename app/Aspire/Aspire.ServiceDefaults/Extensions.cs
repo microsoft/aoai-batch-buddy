@@ -1,3 +1,4 @@
+using Aspire.ServiceDefaults;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +30,8 @@ public static class Extensions
 
             // Turn on service discovery by default
             http.AddServiceDiscovery();
+
+            http.AddHttpMessageHandler<OpenAIPreviewDelegateHandler>();
         });
 
         return builder;
