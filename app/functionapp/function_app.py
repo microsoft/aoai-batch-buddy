@@ -2,8 +2,10 @@ import azure.functions as func
 import datetime
 import json
 import logging
+from durable_status_update import status_update
 
 app = func.FunctionApp()
+app.register_functions(status_update)
 
 @app.route(route="http_trigger", auth_level=func.AuthLevel.ANONYMOUS)
 def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
