@@ -45,7 +45,6 @@ internal static class MapApiEndpoints
         CancellationToken cancellationToken)
     {
         var requestOptions = new RequestOptions { CancellationToken = cancellationToken };
-        requestOptions.AddPolicy(new OpenAIBatchPreviewPolicy(), 0);
         var response = await client.GetBatchesAsync("", 10, requestOptions);
         var jobs = new OpenAIBatchInfo();
         jobs.Create(response.GetRawResponse().Content, new("J"));

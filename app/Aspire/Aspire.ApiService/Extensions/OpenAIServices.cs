@@ -21,7 +21,8 @@ internal static class OpenAIServices
             {
                 var endpoint = new Uri(config["AZURE_OPENAI_ENDPOINT"] ?? "");
                 var keyCreds = new AzureKeyCredential(config["AZURE_OPENAI_API_KEY"] ?? "");
-                var options = new AzureOpenAIClientOptionsPreview("2024-04-15-preview");                
+                var options = new AzureOpenAIClientOptions();
+                options.AddPolicy(new OpenAIBatchPreviewPolicy(), 0);
                 var client = new AzureOpenAIClient(endpoint, keyCreds, options);
                 return client;
             }
