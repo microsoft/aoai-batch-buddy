@@ -29,7 +29,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         )
 
 
-@app.blob_trigger(arg_name="myblob", path="blobname",
+@app.blob_trigger(arg_name="myblob", path="batchfiles",
                                connection="BlobStorageConnectionString") 
 def batch_submitted(myblob: func.InputStream):
     logging.info(f"Python blob trigger function processed blob"

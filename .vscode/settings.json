@@ -7,4 +7,5 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectLanguageModel": 2,
     "azureFunctions.projectSubpath": "app/functionapp",
+    "azurite.skipApiVersionCheck": true     
 }
