@@ -4,7 +4,10 @@
 
 azure-functions
 azure-functions-durable
-azure-identity
+# azurefunctions-extensions-bindings-blob
 azure-storage-blob
 openai
+aiohttp
+azure-identity
 azure-cosmos
+token-count==0.2.1
